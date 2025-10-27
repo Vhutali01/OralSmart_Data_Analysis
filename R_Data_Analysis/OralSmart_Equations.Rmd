@@ -1,0 +1,144 @@
+---
+title: "OralSmart_Equations"
+author: "Vhutali Tsanwani (4203053)"
+date: '`r Sys.Date()`'
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+The equation for the Chi-Square (χ 
+2
+ ) test is:
+
+$$\chi^2 = \sum_{i=1}^{n} \frac{(O_i - E_i)^2}{E_i}$$
+
+The equation for Cramer's V is:
+
+$$V = \sqrt{\frac{\chi^2/n}{\min(k-1, r-1)}}$$
+
+Explanation of Terms
+O 
+i
+​
+ : Observed frequency
+
+E 
+i
+​
+ : Expected frequency
+
+$\chi^2$: Chi-Square value
+
+$\sum{}$: The Sum
+
+
+$$\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}$$
+
+$$\text{Precision} = \frac{TP}{TP + FP}$$
+
+$$\text{Recall} = \frac{TP}{TP + FN}
+$$
+
+$$
+F_1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
+$$
+
+$$
+\text{Macro-Precision} = \frac{1}{K} \sum_{i=1}^{K} \text{Precision}_i
+$$
+
+$$
+\text{Macro-Recall} = \frac{1}{K} \sum_{i=1}^{K} \text{Recall}_i
+$$
+
+$$
+\text{Macro-F1} = \frac{1}{K} \sum_{i=1}^{K} F1_i
+$$
+
+
+$$
+\text{Weighted-Precision} = \frac{\sum_{i=1}^{K} n_i \cdot \text{Precision}_i}{\sum_{i=1}^{K} n_i}
+$$
+
+$$
+\text{Weighted-Recall} = \frac{\sum_{i=1}^{K} n_i \cdot \text{Recall}_i}{\sum_{i=1}^{K} n_i}
+$$
+
+$$
+\text{Weighted-F1} = \frac{\sum_{i=1}^{K} n_i \cdot F1_i}{\sum_{i=1}^{K} n_i}
+$$
+
+
+$\pm$
+
+$$
+f(x) = max(0, x)
+$$
+
+$>$
+
+
+$\leq$
+
+ADAM
+
+
+1. Gradient at time step $t$:
+$$
+g_t = \nabla_{\theta} L_t
+$$
+
+2. First moment estimate (momentum):
+$$
+m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t
+$$
+
+3. Second moment estimate (squared gradients):
+$$
+v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2
+$$
+
+4. Bias correction:
+$$
+\hat{m}_t = \frac{m_t}{1 - \beta_1^t}, \quad \hat{v}_t = \frac{v_t}{1 - \beta_2^t}
+$$
+
+5. Parameter update:
+$$
+\theta_t = \theta_{t-1} - \alpha \cdot \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}
+$$
+
+
+
+$$
+\text{Risk Level}(\text{risk score}) =
+\begin{cases}
+\text{High Risk}, & \text{risk score} \geq 13.5 \\
+\text{Medium Risk}, & 3 \leq \text{risk score} < 13.5 \\
+\text{Low Risk}, & \text{risk score} < 3
+\end{cases}
+$$
+
